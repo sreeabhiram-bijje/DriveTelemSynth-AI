@@ -1,0 +1,496 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 6200 >>
+stream
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 44.00 811.89 Td (DriveTelemSynth AI  --  Project Viva & Technical Q&A Guide) Tj ET
+0.75 w 0.82 0.85 0.90 RG 44.00 807.89 m 551.28 807.89 l S
+0.75 w 0.82 0.85 0.90 RG 44.00 34.00 m 551.28 34.00 l S
+BT /F1 8 Tf 0.45 0.50 0.55 rg 44.00 22.00 Td (DriveTelemSynth AI * Educational & Viva Preparation Guide) Tj ET
+BT /F2 8 Tf 0.30 0.35 0.45 rg 496.28 22.00 Td (Page 1 of 5) Tj ET
+1.00 w
+0.06 0.16 0.36 rg
+0.10 0.25 0.50 RG
+44.00 718.89 507.28 75.00 re B
+BT /F2 18 Tf 1.00 1.00 1.00 rg 62.00 768.89 Td (DRIVETELEMSYNTH AI) Tj ET
+BT /F1 11 Tf 0.85 0.90 0.98 rg 62.00 751.89 Td (Project Viva, Oral Defense & Technical Master Q&A Guide) Tj ET
+BT /F2 8.5 Tf 0.40 0.75 1.00 rg 62.00 733.89 Td (Tech Stack: Python 3 * Flask * NumPy * Pandas * Faker * Chart.js * Pytest) Tj ET
+0.75 w
+0.95 0.97 1.00 rg
+0.80 0.87 0.95 RG
+44.00 665.89 507.28 38.00 re B
+BT /F2 8 Tf 0.15 0.25 0.45 rg 54.00 689.89 Td (PROJECT DOMAIN: Automotive Telematics & Usage-Based Insurance \(UBI\)) Tj ET
+BT /F1 8 Tf 0.25 0.35 0.50 rg 54.00 675.89 Td (KEY FEATURES: 4 Scenarios * 100-pt Risk Heuristic * Bounded In-Memory Cache * 100% Pytest Coverage) Tj ET
+1.00 w
+0.12 0.24 0.48 rg
+44.00 629.89 507.28 24.00 re f
+BT /F2 10 Tf 1.00 1.00 1.00 rg 54.00 637.89 Td (SECTION 1: PROJECT OVERVIEW & ELEVATOR PITCH) Tj ET
+BT /F3 8.5 Tf 0.35 0.40 0.45 rg 46.00 615.89 Td (Foundational questions about the purpose, problem statement, and high-level architecture.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 582.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 582.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 593.89 Td (Q1. What is DriveTelemSynth AI? Give a 60-second summary of your project.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 566.89 Td (Sir, DriveTelemSynth AI is a Multi-Vehicle Comparative Driving Simulation and Intelligent) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 555.39 Td (Insurance Analytics Platform developed using Python, Flask, NumPy, and Pandas.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 537.89 Td (In the automotive and insurance sectors, driving telematics data \(GPS speed, braking,) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 526.39 Td (acceleration\) is vital for Usage-Based Insurance \(UBI\) and fleet analytics. However, real) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 514.89 Td (telematics data is strictly gated by data protection regulations \(GDPR, CCPA\) and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 503.39 Td (proprietary restrictions.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 485.89 Td (DriveTelemSynth AI solves this by simulating and comparing multiple vehicles \(Slow, Medium,) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 474.39 Td (High speeds\) under identical road speed limits. It features an animated HTML5 Canvas) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 462.89 Td (simulation studio, a 100-point heuristic risk scoring model, automated insurance eligibility) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 451.39 Td (and discount assessments, safety rankings, tailored driver coaching recommendations, and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 439.89 Td (instant CSV/JSON exports.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 403.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 403.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 414.39 Td (Q2. What is Driving Telematics, and what is Usage-Based Insurance \(UBI\)?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 387.39 Td (Telematics is the combination of telecommunications and vehicular informatics, measuring) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 375.89 Td (parameters such as vehicle speed, acceleration, braking severity, trip duration, and time of) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 364.39 Td (day.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 346.89 Td (Usage-Based Insurance \(UBI\), also known as Pay-How-You-Drive \(PHYD\), prices insurance) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 335.39 Td (premiums based on actual driving behavior rather than solely on static demographics \(such as) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 323.89 Td (age or credit score\). Safer drivers who accelerate smoothly, obey speed limits, and avoid) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 312.39 Td (late-night driving receive discounted premiums.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 275.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 275.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 286.89 Td (Q3. What are the key features and capabilities of your application?) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 259.89 Td (1. Configurable Scenarios: Generates Safe Urban, Normal Mixed, Aggressive Highway, and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 248.39 Td (Custom Risk profiles.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 236.89 Td (2. Physical Consistency: Enforces strict mathematical relationships: Duration = Distance /) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 225.39 Td (Speed * 60, and Max Speed >= Average Speed.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 213.89 Td (3. Poisson Event Modeling: Discrete simulation of harsh braking and acceleration events.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 202.39 Td (4. Heuristic Risk Scoring: 100-point formula classifying trips into Low, Medium, and High) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 190.89 Td (risk tiers.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 179.39 Td (5. Interactive Analytics Studio: Live dashboard with summary KPIs, distribution charts, and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 167.89 Td (a 25-row preview table.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 156.39 Td (6. Secure & Bounded Architecture: Thread-safe in-memory cache with FIFO eviction \(capped at) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 144.89 Td (32 datasets\) and zero driver data written to disk.) Tj ET
+1.00 w
+0.12 0.24 0.48 rg
+44.00 107.39 507.28 24.00 re f
+BT /F2 10 Tf 1.00 1.00 1.00 rg 54.00 115.39 Td (SECTION 2: DATA GENERATION, MATHEMATICS & STATISTICS) Tj ET
+BT /F3 8.5 Tf 0.35 0.40 0.45 rg 46.00 93.39 Td (How synthetic data is generated, mathematical distributions used, and physical realism.) Tj ET
+
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 7005 >>
+stream
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 44.00 811.89 Td (DriveTelemSynth AI  --  Project Viva & Technical Q&A Guide) Tj ET
+0.75 w 0.82 0.85 0.90 RG 44.00 807.89 m 551.28 807.89 l S
+0.75 w 0.82 0.85 0.90 RG 44.00 34.00 m 551.28 34.00 l S
+BT /F1 8 Tf 0.45 0.50 0.55 rg 44.00 22.00 Td (DriveTelemSynth AI * Educational & Viva Preparation Guide) Tj ET
+BT /F2 8 Tf 0.30 0.35 0.45 rg 496.28 22.00 Td (Page 2 of 5) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 770.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 770.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 781.89 Td (Q4. Why did you use NumPy's default_rng\(seed\) instead of np.random.seed\(\)?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 754.89 Td (In modern NumPy \(v1.17+\), default_rng\(\) instantiates an independent Generator backed by the) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 743.39 Td (PCG64 bit generator. In contrast, np.random.seed\(\) alters a legacy global state that is not) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 731.89 Td (thread-safe and can cause cross-request collision in web applications like Flask.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 714.39 Td (Using default_rng\(seed\) guarantees thread safety, superior statistical entropy, and perfect) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 702.89 Td (reproducibility across different operating systems.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 666.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 666.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 677.39 Td (Q5. Why is the Poisson distribution used for harsh acceleration and braking events?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 650.39 Td (Driving incidents like harsh braking or rapid acceleration are discrete, independent events) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 638.89 Td (occurring over a continuous distance. The Poisson distribution is the standard mathematical) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 627.39 Td (model for counting the occurrences of an event in a fixed interval given a known average) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 615.89 Td (rate lambda.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 598.39 Td (In our generator, lambda is dynamically parameterized by trip distance: lambda =) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 586.89 Td (rate_per_10km * \(distance_km / 10\). NumPy then samples rng.poisson\(lambda\), producing) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 575.39 Td (natural integer counts with realistic variance.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 538.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 538.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 549.89 Td (Q6. How does the system ensure physical consistency between trip variables?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 522.89 Td (Naive synthetic generation often samples speed, distance, and duration independently,) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 511.39 Td (producing illogical trips \(e.g. 50 km driven in 20 minutes at 30 km/h\).) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 493.89 Td (DriveTelemSynth AI enforces physical laws:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 482.39 Td (- Average Speed and Distance are sampled first from scenario boundaries.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 470.89 Td (- Duration \(in minutes\) is computed deterministically: \(distance_km / average_speed_kmh\) *) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 459.39 Td (60.0.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 447.89 Td (- Maximum Speed is calculated by adding a positive offset \(5 to 58 km/h\) to average speed:) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 436.39 Td (maximum_speed = average_speed + offset, ensuring Maximum Speed >= Average Speed always.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 399.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 399.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 410.89 Td (Q7. How are synthetic driver identities generated, and why pool them?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 383.89 Td (We use the Faker library \(seeded with the same seed\) to generate realistic alphanumeric) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 372.39 Td (driver codes \(e.g., 'DRV-16658760'\).) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 354.89 Td (Rather than generating a new driver ID for every trip, we generate a bounded pool of drivers) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 343.39 Td (\(up to 80 drivers for large batches\) and randomly assign trips to this pool. This mirrors) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 331.89 Td (real fleet dynamics where an individual driver completes multiple trips over time.) Tj ET
+1.00 w
+0.12 0.24 0.48 rg
+44.00 294.39 507.28 24.00 re f
+BT /F2 10 Tf 1.00 1.00 1.00 rg 54.00 302.39 Td (SECTION 3: RISK SCORING HEURISTIC & ANALYTICS) Tj ET
+BT /F3 8.5 Tf 0.35 0.40 0.45 rg 46.00 280.39 Td (Details of the 100-point risk heuristic, weighting criteria, and Pandas aggregations.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 247.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 247.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 258.39 Td (Q8. Explain the exact mathematical formula used to calculate the Risk Score.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 231.39 Td (The Risk Score is a transparent heuristic ranging from 0 to 100 points, calculated as:) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 213.89 Td (1. Speeding Points \(max 45\): speeding_ratio * 45.0) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 202.39 Td (2. Harsh Braking Points \(max 20\): min\(harsh_braking_count / max\(distance_km / 10, 1\), 1.0\) *) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 190.89 Td (20.0) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 179.39 Td (3. Harsh Acceleration Points \(max 20\): min\(harsh_acceleration_count / max\(distance_km / 10,) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 167.89 Td (1\), 1.0\) * 20.0) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 156.39 Td (4. Night Driving Points \(max 15\): night_driving_ratio * 15.0) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 138.89 Td (Total Points = clip\(Speeding + Braking + Acceleration + Night, 0, 100\).) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 127.39 Td (Final Score = floor\(Total Points + 0.5\) to produce an integer score.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 90.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 90.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 101.89 Td (Q9. How are drivers categorized into risk labels, and what are the thresholds?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 74.89 Td (Using np.select\(\), each trip is classified based on its integer risk score:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 63.39 Td (- Low Risk: Score < 35 \(safe driving, low event rates, minimal speeding\)) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 51.89 Td (- Medium Risk: 35 <= Score < 65 \(typical mixed driving behavior\)) Tj ET
+
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 12 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 6641 >>
+stream
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 44.00 811.89 Td (DriveTelemSynth AI  --  Project Viva & Technical Q&A Guide) Tj ET
+0.75 w 0.82 0.85 0.90 RG 44.00 807.89 m 551.28 807.89 l S
+0.75 w 0.82 0.85 0.90 RG 44.00 34.00 m 551.28 34.00 l S
+BT /F1 8 Tf 0.45 0.50 0.55 rg 44.00 22.00 Td (DriveTelemSynth AI * Educational & Viva Preparation Guide) Tj ET
+BT /F2 8 Tf 0.30 0.35 0.45 rg 496.28 22.00 Td (Page 3 of 5) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 785.89 Td (- High Risk: 65 <= Score <= 100 \(aggressive driving, excessive speeding, frequent harsh) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 774.39 Td (events\)) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 737.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 737.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 748.89 Td (Q10. How does the analytics engine calculate summary metrics for the dashboard?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 721.89 Td (The module analytics/summaries.py uses Pandas vectorization:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 710.39 Td (- KPIs: Total trips len\(frame\), unique drivers frame['driver_id'].nunique\(\), mean risk) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 698.89 Td (score, high-risk percentage \(frame['risk_label'] == 'High'\).mean\(\) * 100, and mean speed.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 687.39 Td (- Risk Distribution: frame['risk_label'].value_counts\(\).reindex\(['Low', 'Medium', 'High']\).) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 675.89 Td (- Average Speed by Risk: frame.groupby\('risk_label'\)['average_speed_kmh'].mean\(\).) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 664.39 Td (- Driving Events: Mean harsh acceleration and braking counts across all records.) Tj ET
+1.00 w
+0.12 0.24 0.48 rg
+44.00 626.89 507.28 24.00 re f
+BT /F2 10 Tf 1.00 1.00 1.00 rg 54.00 634.89 Td (SECTION 4: BACKEND ARCHITECTURE & FLASK IMPLEMENTATION) Tj ET
+BT /F3 8.5 Tf 0.35 0.40 0.45 rg 46.00 612.89 Td (Flask endpoints, request lifecycle, thread safety, and memory management.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 579.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 579.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 590.89 Td (Q11. Walk through the request-response lifecycle of POST /api/generate.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 563.89 Td (1. Request Reception: The client sends a JSON payload with records, scenario, seed, and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 552.39 Td (optional custom_settings.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 540.89 Td (2. Payload Validation: validate_request\(\) verifies JSON types, numeric bounds, and scenario) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 529.39 Td (names.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 517.89 Td (3. Data Generation: generate_dataset\(\) samples NumPy distributions and calculates risk) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 506.39 Td (scores.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 494.89 Td (4. Memory Caching: A 24-character cryptographically secure token is generated) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 483.39 Td (\(secrets.token_urlsafe\). The DataFrame is cached in DATASETS under a threading.Lock\(\).) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 471.89 Td (5. Response Serialization: build_summary\(\) generates KPIs and charts JSON, and the first 25) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 460.39 Td (rows are returned with the temporary download URL.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 423.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 423.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 434.89 Td (Q12. How does the application prevent memory exhaustion with large datasets?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 407.89 Td (The application employs a bounded FIFO cache using Python's collections.OrderedDict:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 396.39 Td (- MAX_STORED_DATASETS is strictly capped at 32.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 384.89 Td (- Whenever a new dataset is generated, DATASETS.move_to_end\(download_id\) marks it as newest.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 373.39 Td (- A while loop checks: while len\(DATASETS\) > MAX_STORED_DATASETS:) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 361.89 Td (DATASETS.popitem\(last=False\).) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 350.39 Td (- This automatically evicts the oldest dataset from RAM, preventing memory leaks on long) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 338.89 Td (server uptimes.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 302.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 302.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 313.39 Td (Q13. How does the CSV download work without creating physical files on disk?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 286.39 Td (When GET /download/<download_id> is requested, the DataFrame is retrieved from the in-memory) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 274.89 Td (cache. It is serialized directly into memory using) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 263.39 Td (io.BytesIO\(frame.to_csv\(index=False\).encode\('utf-8'\)\).) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 245.89 Td (Flask's send_file\(\) streams the byte stream directly to the HTTP response with) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 234.39 Td (mimetype='text/csv' and Content-Disposition='attachment'. This ensures zero sensitive data) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 222.89 Td (is persisted to disk.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 186.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 186.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 197.39 Td (Q14. Why did you use threading.Lock\(\) in DATASETS_LOCK?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 170.39 Td (Flask handles concurrent requests using multiple worker threads. Standard Python) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 158.89 Td (dictionaries are not safe against simultaneous write/pop operations across threads. Without) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 147.39 Td (synchronization, concurrent accesses could cause race conditions or KeyError exceptions.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 135.89 Td (threading.Lock\(\) guarantees mutually exclusive, atomic cache operations.) Tj ET
+1.00 w
+0.12 0.24 0.48 rg
+44.00 98.39 507.28 24.00 re f
+BT /F2 10 Tf 1.00 1.00 1.00 rg 54.00 106.39 Td (SECTION 5: INPUT VALIDATION, SECURITY & QUALITY ASSURANCE) Tj ET
+BT /F3 8.5 Tf 0.35 0.40 0.45 rg 46.00 84.39 Td (Security measures, error handling, edge cases, and automated testing.) Tj ET
+
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 14 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 6638 >>
+stream
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 44.00 811.89 Td (DriveTelemSynth AI  --  Project Viva & Technical Q&A Guide) Tj ET
+0.75 w 0.82 0.85 0.90 RG 44.00 807.89 m 551.28 807.89 l S
+0.75 w 0.82 0.85 0.90 RG 44.00 34.00 m 551.28 34.00 l S
+BT /F1 8 Tf 0.45 0.50 0.55 rg 44.00 22.00 Td (DriveTelemSynth AI * Educational & Viva Preparation Guide) Tj ET
+BT /F2 8 Tf 0.30 0.35 0.45 rg 496.28 22.00 Td (Page 4 of 5) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 770.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 770.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 781.89 Td (Q15. What security safeguards are built into the API?) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 754.89 Td (1. Payload Size Limit: app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 \(16 KB\) prevents) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 743.39 Td (oversized payload DOS attacks.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 731.89 Td (2. Finite Value Checks: Uses math.isfinite\(\) to block NaN or Infinity values.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 720.39 Td (3. Boolean Trap Prevention: In Python, bool is a subclass of int. Validation explicitly) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 708.89 Td (checks if isinstance\(val, bool\) to block booleans from passing as integer counts.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 697.39 Td (4. Strict Range Clamping: Record count is capped between 1 and 10,000; random seed is) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 685.89 Td (limited to 32-bit unsigned int.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 674.39 Td (5. Secure Tokens: Secrets are generated with secrets.token_urlsafe\(24\) rather than) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 662.89 Td (predictable timestamps.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 626.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 626.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 637.39 Td (Q16. Explain your Pytest testing strategy and test results.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 610.39 Td (We have a full test suite in tests/test_app.py comprising 20 passing unit and integration) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 598.89 Td (tests:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 587.39 Td (- Parameterized Scenario Tests: Verifies all 4 scenarios generate valid non-null records) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 575.89 Td (matching physical constraints.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 564.39 Td (- Determinism Test: Confirms two runs with the same seed produce bit-for-bit identical) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 552.89 Td (DataFrames.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 541.39 Td (- Scenario Separation Test: Asserts Safe Urban has strictly lower speed, speeding ratio, and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 529.89 Td (events than Aggressive Highway.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 518.39 Td (- Boundary & Validation Tests: Tests out-of-range records \(0, 10,001\), negative seeds,) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 506.89 Td (inverted speed ranges, and invalid JSON.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 495.39 Td (- API & Cache Lifecycle Tests: Exercises /health, /api/generate, valid CSV downloads, and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 483.89 Td (404 responses on expired tokens.) Tj ET
+1.00 w
+0.12 0.24 0.48 rg
+44.00 446.39 507.28 24.00 re f
+BT /F2 10 Tf 1.00 1.00 1.00 rg 54.00 454.39 Td (SECTION 6: FRONTEND & DATA VISUALIZATION) Tj ET
+BT /F3 8.5 Tf 0.35 0.40 0.45 rg 46.00 432.39 Td (User interface, asynchronous communication, Chart.js graphs, and UX design.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 399.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 399.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 410.39 Td (Q17. How does the frontend client interact with the backend?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 383.39 Td (The client-side JavaScript \(static/js/main.js\) uses modern asynchronous Fetch API.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 371.89 Td (When the user submits the form:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 360.39 Td (- It intercepts the event with e.preventDefault\(\).) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 348.89 Td (- Validates input fields and shows a spinner / loading state.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 337.39 Td (- Sends an HTTP POST to /api/generate-multiple with JSON payload.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 325.89 Td (- On success, updates the fleet KPI cards, Chart.js instances, comparison table, insurance) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 314.39 Td (cards, and preview table.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 302.89 Td (- On failure, displays human-readable error messages returned by the API.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 266.39 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 266.39 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 277.39 Td (Q18. What charts are rendered, and what business insights do they convey?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 250.39 Td (We use Chart.js v4 to render six analytical views:) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 238.89 Td (1. Average Speed by Vehicle: Displays vehicle velocities against the posted road speed) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 227.39 Td (limit.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 215.89 Td (2. Risk Score Comparison: Compares overall heuristic scores across all fleet vehicles.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 204.39 Td (3. Simulated Insurance Premium: Visualizes final premiums incorporating safe-driving) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 192.89 Td (discounts.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 181.39 Td (4. Harsh Driving Events: Side-by-side comparison of harsh accelerations vs. harsh braking) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 169.89 Td (per trip.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 158.39 Td (5. Fleet Risk Tier Distribution: Doughnut breakdown of Low, Medium, and High risk vehicles.) Tj ET
+BT /F2 8.5 Tf 0.15 0.20 0.25 rg 56.00 146.89 Td (6. Driving Behaviour Radar: Multi-axis profile comparing Speed, Braking, Acceleration,) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 135.39 Td (Night, and Speeding.) Tj ET
+1.00 w
+0.12 0.24 0.48 rg
+44.00 97.89 507.28 24.00 re f
+BT /F2 10 Tf 1.00 1.00 1.00 rg 54.00 105.89 Td (SECTION 7: MULTI-VEHICLE SIMULATION & INSURANCE ELIGIBILITY) Tj ET
+BT /F3 8.5 Tf 0.35 0.40 0.45 rg 46.00 83.89 Td (HTML5 Canvas road animation, relative speed modeling, and Pay-How-You-Drive underwriting.) Tj ET
+
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 16 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> >>
+endobj
+16 0 obj
+<< /Length 4096 >>
+stream
+BT /F2 8.5 Tf 0.30 0.35 0.45 rg 44.00 811.89 Td (DriveTelemSynth AI  --  Project Viva & Technical Q&A Guide) Tj ET
+0.75 w 0.82 0.85 0.90 RG 44.00 807.89 m 551.28 807.89 l S
+0.75 w 0.82 0.85 0.90 RG 44.00 34.00 m 551.28 34.00 l S
+BT /F1 8 Tf 0.45 0.50 0.55 rg 44.00 22.00 Td (DriveTelemSynth AI * Educational & Viva Preparation Guide) Tj ET
+BT /F2 8 Tf 0.30 0.35 0.45 rg 496.28 22.00 Td (Page 5 of 5) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 770.89 507.28 23.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 770.89 3.50 23.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 781.89 Td (Q19. How does the HTML5 Canvas Multi-Vehicle Driving Simulation work?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 754.89 Td (The simulation studio renders an animated multi-lane highway using the HTML5 Canvas 2D API.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 743.39 Td (Key mechanics:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 731.89 Td (- Lanes: Dynamically calculates lane heights for 2 to 5 concurrent vehicles.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 720.39 Td (- Relative Velocities: Each vehicle moves at a speed directly proportional to its configured) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 708.89 Td (speed.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 697.39 Td (- Animation Loop: requestAnimationFrame ensures 60 FPS smooth rendering with high-precision) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 685.89 Td (delta-time.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 674.39 Td (- Visual Realism: Features headlights with forward glow, taillights, wheel treads, vehicle) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 662.89 Td (labels, and live speed badges.) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 651.39 Td (- Interactive Controls: Full playback control including Start, Pause, Resume, Reset, and) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 639.89 Td (live speed adjustment sliders.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 590.39 507.28 36.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 590.39 3.50 36.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 614.39 Td (Q20. Why does speed risk depend on relative road speed limits rather than absolute) Tj ET
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 601.39 Td (speed?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 574.39 Td (In real-world telematics underwriting, traveling at 100 km/h on a 120 km/h expressway is) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 562.89 Td (safe and legal, whereas traveling at 60 km/h in a 30 km/h school zone is reckless. Our) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 551.39 Td (engine calculates the speeding ratio relative to the configured road_speed_limit, ensuring) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 539.89 Td (vehicles driving at legal highway speeds are not unfairly penalized.) Tj ET
+0.75 w
+0.94 0.96 0.99 rg
+0.78 0.84 0.94 RG
+44.00 490.39 507.28 36.00 re B
+1.00 w
+0.10 0.45 0.85 rg
+44.00 490.39 3.50 36.00 re f
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 514.39 Td (Q21. How does the Insurance Eligibility Engine calculate simulated premiums and) Tj ET
+BT /F2 9.5 Tf 0.08 0.18 0.38 rg 56.00 501.39 Td (discounts?) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 474.39 Td (The engine \(analytics/insurance.py\) applies actuarial heuristic discount tiers based on risk) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 462.89 Td (scores:) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 451.39 Td (- Low Risk \(Score < 35\): Preferred Safe Driver, awarded the maximum 20% discount \(e.g. Rs.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 439.89 Td (8,000 on a Rs. 10,000 base\).) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 428.39 Td (- Medium Risk \(Score 35-64\): Standard Coverage, awarded a 5% baseline discount \(Rs. 9,500\).) Tj ET
+BT /F1 8.5 Tf 0.15 0.20 0.25 rg 56.00 416.89 Td (- High Risk \(Score >= 65\): High Risk / Surcharge Tier, 0% discount \(Rs. 10,000\), flagged for) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 405.39 Td (underwriting review.) Tj ET
+BT /F1 8.5 Tf 0.18 0.20 0.25 rg 50.00 393.89 Td (Each assessment includes a detailed plain-language explanation of the decision.) Tj ET
+
+endstream
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000148 00000 n 
+0000000218 00000 n 
+0000000293 00000 n 
+0000000371 00000 n 
+0000000439 00000 n 
+0000000601 00000 n 
+0000006853 00000 n 
+0000007016 00000 n 
+0000014074 00000 n 
+0000014238 00000 n 
+0000020932 00000 n 
+0000021096 00000 n 
+0000027787 00000 n 
+0000027951 00000 n 
+trailer
+<< /Size 17 /Root 1 0 R >>
+startxref
+32100
+%%EOF

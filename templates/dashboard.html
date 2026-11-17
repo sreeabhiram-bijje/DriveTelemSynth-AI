@@ -1,0 +1,490 @@
+<!-- Multi-Vehicle Driving Simulation Studio -->
+<section class="panel simulation-studio" id="simulation-section">
+  <div class="section-title">
+    <div class="title-icon">🏎</div>
+    <div>
+      <h2>Multi-Vehicle Driving Simulation Studio</h2>
+      <p>Real-time visual demonstration of relative vehicle speeds, lane behaviors, and relative speed dynamics.</p>
+    </div>
+    <div class="sim-meta-wrap">
+      <div class="sim-timer-box">
+        <span class="timer-label">ELAPSED TIME</span>
+        <strong id="sim-timer">00:00.0</strong>
+      </div>
+      <div class="sim-status-pill pill-stopped" id="sim-status-pill">
+        <span class="status-dot"></span> <span id="sim-status-text">STOPPED</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="canvas-container">
+    <canvas id="simulation-canvas" width="1200" height="320" aria-label="Animated multi-lane driving simulation road"></canvas>
+  </div>
+
+  <div class="sim-controls-toolbar">
+    <div class="btn-group">
+      <button class="sim-btn btn-primary" id="sim-btn-start" type="button">
+        <span class="btn-icon">▶</span> Start Simulation
+      </button>
+      <button class="sim-btn btn-secondary" id="sim-btn-pause" type="button" disabled>
+        <span class="btn-icon">⏸</span> Pause
+      </button>
+      <button class="sim-btn btn-secondary" id="sim-btn-resume" type="button" disabled>
+        <span class="btn-icon">⏯</span> Resume
+      </button>
+      <button class="sim-btn btn-secondary" id="sim-btn-reset" type="button">
+        <span class="btn-icon">↺</span> Reset
+      </button>
+    </div>
+
+    <div class="btn-group">
+      <button class="sim-btn btn-outline" id="sim-btn-speeds-toggle" type="button">
+        <span class="btn-icon">⚙</span> Tweak Speeds
+      </button>
+      <button class="sim-btn btn-outline" id="sim-btn-sync" type="button">
+        <span class="btn-icon">↻</span> Sync with Fleet
+      </button>
+    </div>
+  </div>
+
+  <!-- Real-Time Speed Adjuster Dropdown/Drawer -->
+  <div class="sim-speed-adjuster panel-raised" id="sim-speed-panel" hidden>
+    <div class="speed-adjuster-heading">
+      <strong>Live Speed & Road Limit Adjustment</strong>
+      <small>Move sliders to change relative vehicle velocities in real time</small>
+    </div>
+    <div class="speed-sliders-grid" id="sim-speed-sliders">
+      <!-- Injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Speed Legend & Live Telemetry -->
+  <div class="sim-legend-bar" id="sim-legend-container">
+    <!-- Injected dynamically by JavaScript -->
+  </div>
+
+  <!-- Simulation Summary Box (Shown when paused or completed) -->
+  <div class="sim-summary-box" id="sim-summary-container">
+    <div class="summary-item"><span class="label">Road Speed Limit:</span> <strong id="sim-sum-limit">80 km/h</strong></div>
+    <div class="summary-item"><span class="label">Fastest in Sim:</span> <strong id="sim-sum-fastest">Vehicle C (110 km/h)</strong></div>
+    <div class="summary-item"><span class="label">Slowest in Sim:</span> <strong id="sim-sum-slowest">Vehicle A (35 km/h)</strong></div>
+    <div class="summary-item"><span class="label">Relative Speed Ratio:</span> <strong id="sim-sum-ratio">3.14x speed spread</strong></div>
+  </div>
+</section>
+
+<!-- Multi-Vehicle Setup & Generation Panel -->
+<section class="generator-card panel" id="generator-section">
+  <div class="section-title">
+    <div class="title-icon">▦</div>
+    <div>
+      <h2>Multi-Vehicle Telematics Setup</h2>
+      <p>Configure 2 to 5 vehicles with customized speeds, behaviours, and road speed limits.</p>
+    </div>
+    <span class="step-label">01 <i>/</i> CONFIG & GENERATE</span>
+  </div>
+
+  <form id="multi-vehicle-form">
+    <div class="mv-top-grid">
+      <label class="field">
+        <span class="field-label">Number of Vehicles</span>
+        <span class="select-wrap">
+          <select id="mv-num-vehicles" name="num_vehicles">
+            <option value="2">2 Vehicles (Comparative Pair)</option>
+            <option value="3" selected>3 Vehicles (Slow / Medium / High - Standard)</option>
+            <option value="4">4 Vehicles (Fleet Quadrant)</option>
+            <option value="5">5 Vehicles (Full Enterprise Fleet)</option>
+          </select>
+          <span class="select-chevron">⌄</span>
+        </span>
+        <span class="field-hint">Simulate 2 to 5 vehicles concurrently</span>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Road Speed Limit (km/h)</span>
+        <span class="input-wrap">
+          <input id="mv-road-speed-limit" name="road_speed_limit" type="number" min="30" max="150" value="80" required>
+          <span class="input-suffix">km/h</span>
+        </span>
+        <span class="field-hint">Speeding risk is computed relative to this limit</span>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Base Insurance Premium (₹)</span>
+        <span class="input-wrap">
+          <input id="mv-base-premium" name="base_premium" type="number" min="1000" max="500000" step="500" value="10000" required>
+          <span class="input-suffix">₹</span>
+        </span>
+        <span class="field-hint">Baseline annual illustrative premium</span>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Trips per Vehicle</span>
+        <span class="input-wrap">
+          <input id="mv-records-per-vehicle" name="records_per_vehicle" type="number" min="5" max="2000" value="50" required>
+          <span class="input-suffix">trips</span>
+        </span>
+        <span class="field-hint">Synthetic trip samples per vehicle</span>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Random Seed</span>
+        <span class="input-wrap">
+          <input id="mv-seed" name="seed" type="number" min="0" max="4294967295" value="42" required>
+          <span class="seed-icon">⌘</span>
+        </span>
+        <span class="field-hint">Guarantees deterministic reproducibility</span>
+      </label>
+    </div>
+
+    <!-- Dynamic Vehicle Configuration Cards -->
+    <div class="vehicle-cards-container">
+      <div class="vehicle-cards-header">
+        <span>Vehicle Configurations & Driving Behaviours</span>
+        <button type="button" class="btn-text-action" id="btn-reset-presets">↺ Reset to Default Speeds</button>
+      </div>
+      <div class="vehicle-cards-grid" id="vehicle-cards-grid">
+        <!-- Rendered dynamically by JavaScript (2-5 cards) -->
+      </div>
+    </div>
+
+    <div class="form-bottom">
+      <div class="form-assurance">
+        <span>↻</span> Fully reproducible telematics: Identical seed + settings = Identical output
+      </div>
+      <button class="generate-button" id="mv-generate-btn" type="submit">
+        <span class="button-label">Generate Fleet Telematics & Assess Insurance</span>
+        <span class="button-arrow">→</span>
+        <span class="spinner" aria-hidden="true"></span>
+      </button>
+    </div>
+  </form>
+
+  <div id="mv-error-message" class="error-message" role="alert" hidden></div>
+</section>
+
+<!-- Multi-Vehicle Overview KPI Cards -->
+<section class="results-section" id="overview-section" aria-live="polite">
+  <div class="results-heading">
+    <div>
+      <div class="eyebrow"><span class="eyebrow-line"></span> FLEET INTELLIGENCE</div>
+      <h2>Multi-Vehicle Fleet Overview</h2>
+    </div>
+    <div class="result-meta" id="mv-result-meta">Generate fleet telematics to view analytics</div>
+  </div>
+
+  <div class="kpi-grid">
+    <article class="kpi-card">
+      <div class="kpi-top"><span class="kpi-label">VEHICLES SIMULATED</span><span class="kpi-icon blue-icon">🏎</span></div>
+      <div class="kpi-value" id="kpi-total-vehicles">—</div>
+      <div class="kpi-foot" id="kpi-total-trips">Total synthetic trips: —</div>
+    </article>
+    <article class="kpi-card">
+      <div class="kpi-top"><span class="kpi-label">FLEET AVERAGE RISK</span><span class="kpi-icon amber-icon">⌁</span></div>
+      <div class="kpi-value" id="kpi-fleet-risk">—<small>/100</small></div>
+      <div class="kpi-foot">100-pt heuristic average</div>
+    </article>
+    <article class="kpi-card">
+      <div class="kpi-top"><span class="kpi-label">PREFERRED INSURANCE</span><span class="kpi-icon mint-icon">★</span></div>
+      <div class="kpi-value" id="kpi-preferred-count">—</div>
+      <div class="kpi-foot">Eligible for 20% discount</div>
+    </article>
+    <article class="kpi-card">
+      <div class="kpi-top"><span class="kpi-label">RISK DISTRIBUTION</span><span class="kpi-icon violet-icon">◫</span></div>
+      <div class="kpi-value" id="kpi-risk-split">—</div>
+      <div class="kpi-foot">Low / Medium / High tier split</div>
+    </article>
+  </div>
+</section>
+
+<!-- Best Driver Analysis & Safety Ranking Highlights -->
+<section class="panel best-driver-section" id="best-driver-card">
+  <div class="best-driver-content">
+    <div class="best-driver-badge">🥇 SAFEST DRIVER RECOGNITION</div>
+    <div class="best-driver-title-row">
+      <h3 id="best-driver-name">—</h3>
+      <span class="risk-pill risk-low" id="best-driver-score-pill">Risk Score: —</span>
+    </div>
+    <p id="best-driver-reason" class="best-driver-text">
+      Generate multi-vehicle data to reveal comparative ranking and driving safety insights.
+    </p>
+    <div class="best-driver-stats" id="best-driver-metrics">
+      <div class="stat-item"><span class="stat-label">Safety Rank:</span> <strong>#1 of Fleet</strong></div>
+      <div class="stat-item"><span class="stat-label">Insurance Tier:</span> <strong id="best-driver-ins-tier">—</strong></div>
+      <div class="stat-item"><span class="stat-label">Simulated Discount:</span> <strong id="best-driver-discount" class="text-mint">—</strong></div>
+      <div class="stat-item"><span class="stat-label">Highest Risk Fleet Vehicle:</span> <strong id="highest-risk-vehicle-tag" class="text-rose">—</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- Vehicle Comparison Table -->
+<section class="preview-section panel" id="comparison-section">
+  <div class="preview-header">
+    <div>
+      <div class="preview-title-row">
+        <h2>Multi-Vehicle Safety & Insurance Comparison Table</h2>
+        <span class="table-synthetic">COMPARATIVE ANALYSIS</span>
+      </div>
+      <p>Vehicles ranked strictly by overall driving risk with secondary tie-breakers.</p>
+    </div>
+  </div>
+  <div class="table-scroll">
+    <table id="comparison-table">
+      <thead>
+        <tr>
+          <th>RANK</th>
+          <th>VEHICLE ID & NAME</th>
+          <th>CATEGORY</th>
+          <th>AVG SPEED</th>
+          <th>MAX SPEED</th>
+          <th>DISTANCE</th>
+          <th>HARSH BRAKE</th>
+          <th>HARSH ACCEL</th>
+          <th>SPEEDING %</th>
+          <th>NIGHT %</th>
+          <th>RISK SCORE</th>
+          <th>RISK TIER</th>
+          <th>INSURANCE STATUS</th>
+          <th>SIMULATED PREMIUM</th>
+        </tr>
+      </thead>
+      <tbody id="comparison-body">
+        <tr class="empty-row">
+          <td colspan="14">
+            <span class="empty-icon">▤</span>
+            <strong>Fleet comparison results will appear here</strong>
+            <small>Configure vehicles and click "Generate Fleet Telematics" above.</small>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Comparative Analytics Charts (Chart.js Grid) -->
+<section class="results-section" id="analytics-section">
+  <div class="results-heading">
+    <div>
+      <div class="eyebrow"><span class="eyebrow-line"></span> VISUAL ANALYTICS</div>
+      <h2>Comparative Vehicle Charts</h2>
+    </div>
+    <div class="result-meta">Interactive telemetry and insurance charts</div>
+  </div>
+
+  <div class="charts-grid-3">
+    <!-- Chart 1: Average Speed by Vehicle -->
+    <article class="chart-card panel">
+      <div class="chart-heading">
+        <div><h3>Average Speed by Vehicle</h3><p>Speed comparison against road speed limit</p></div>
+        <span class="chart-unit">KM/H</span>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="chart-avg-speed"></canvas></div>
+    </article>
+
+    <!-- Chart 2: Risk Score Comparison -->
+    <article class="chart-card panel">
+      <div class="chart-heading">
+        <div><h3>Risk Score by Vehicle</h3><p>100-point heuristic risk evaluation</p></div>
+        <span class="chart-unit">SCORE / 100</span>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="chart-risk-scores"></canvas></div>
+    </article>
+
+    <!-- Chart 3: Simulated Insurance Premium -->
+    <article class="chart-card panel">
+      <div class="chart-heading">
+        <div><h3>Simulated Insurance Premium</h3><p>Reflecting safe-driving discount tiers</p></div>
+        <span class="chart-unit">₹ INR</span>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="chart-premiums"></canvas></div>
+    </article>
+
+    <!-- Chart 4: Harsh Driving Events -->
+    <article class="chart-card panel">
+      <div class="chart-heading">
+        <div><h3>Harsh Driving Events</h3><p>Harsh accelerations vs harsh braking per trip</p></div>
+        <span class="chart-unit">EVENTS / TRIP</span>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="chart-events-compare"></canvas></div>
+    </article>
+
+    <!-- Chart 5: Fleet Risk Distribution -->
+    <article class="chart-card panel">
+      <div class="chart-heading">
+        <div><h3>Fleet Risk Tier Distribution</h3><p>Proportion of vehicles in risk tiers</p></div>
+        <span class="chart-unit">COUNT</span>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="chart-fleet-distribution"></canvas></div>
+    </article>
+
+    <!-- Chart 6: Driving Behaviour Radar -->
+    <article class="chart-card panel">
+      <div class="chart-heading">
+        <div><h3>Driving Behaviour Radar</h3><p>Normalized multi-axis behavioral comparison</p></div>
+        <span class="chart-unit">PROFILES</span>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="chart-behaviour-radar"></canvas></div>
+    </article>
+  </div>
+</section>
+
+<!-- Insurance Assessment Section -->
+<section class="results-section" id="insurance-section">
+  <div class="results-heading">
+    <div>
+      <div class="eyebrow"><span class="eyebrow-line"></span> USAGE-BASED INSURANCE ENGINE</div>
+      <h2>Simulated Insurance Assessment</h2>
+    </div>
+    <div class="result-meta">Illustrative UBI Pay-How-You-Drive underwriting analysis</div>
+  </div>
+
+  <div class="insurance-cards-grid" id="insurance-cards-grid">
+    <!-- Rendered dynamically by JavaScript -->
+    <div class="panel empty-card-placeholder">
+      <p>Configure and generate fleet data to view personalized insurance assessments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Intelligent Safety Recommendations Section -->
+<section class="results-section" id="recommendations-section">
+  <div class="results-heading">
+    <div>
+      <div class="eyebrow"><span class="eyebrow-line"></span> INTELLIGENT COACHING ENGINE</div>
+      <h2>Safety Recommendations by Vehicle</h2>
+    </div>
+    <div class="result-meta">Tailored behavioral feedback derived from telematics risk factors</div>
+  </div>
+
+  <div class="recommendations-grid" id="recommendations-container">
+    <!-- Rendered dynamically by JavaScript -->
+    <div class="panel empty-card-placeholder">
+      <p>Personalized driver coaching recommendations will appear here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Data Export & Trip Records Preview Panel -->
+<section class="preview-section panel" id="preview-section">
+  <div class="preview-header">
+    <div>
+      <div class="preview-title-row">
+        <h2>Multi-Vehicle Telematics Trip Preview</h2>
+        <span class="table-synthetic">SYNTHETIC TELEMATICS</span>
+      </div>
+      <p>Sample individual trip records generated for the fleet.</p>
+    </div>
+    <div class="export-btn-group">
+      <a class="download-button disabled" id="mv-download-csv" href="#" aria-disabled="true">
+        <span>↓</span> Download Fleet CSV
+      </a>
+      <a class="download-button disabled" id="mv-download-json" href="#" aria-disabled="true">
+        <span>{ }</span> Download Full JSON Analytics
+      </a>
+    </div>
+  </div>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>VEHICLE ID</th>
+          <th>VEHICLE NAME</th>
+          <th>TRIP ID</th>
+          <th>DRIVER ID</th>
+          <th>DISTANCE <i>KM</i></th>
+          <th>DURATION <i>MIN</i></th>
+          <th>AVG SPEED <i>KM/H</i></th>
+          <th>MAX SPEED <i>KM/H</i></th>
+          <th>HARSH ACCEL</th>
+          <th>HARSH BRAKE</th>
+          <th>SPEEDING</th>
+          <th>NIGHT DRIVE</th>
+          <th>RISK SCORE</th>
+          <th>RISK LABEL</th>
+        </tr>
+      </thead>
+      <tbody id="mv-preview-body">
+        <tr class="empty-row">
+          <td colspan="14">
+            <span class="empty-icon">▤</span>
+            <strong>Trip records will appear here</strong>
+            <small>Generate multi-vehicle data to preview trips.</small>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-footer">
+    <span id="mv-preview-count">Showing 0 records</span>
+    <span>Speeding and night driving shown as percentages</span>
+  </div>
+</section>
+
+<!-- Single Scenario Legacy Generator (Preserved for 100% Backwards Compatibility) -->
+<details class="panel single-legacy-panel" id="single-scenario-section">
+  <summary class="single-legacy-summary">
+    <span class="summary-left">
+      <span class="summary-icon">✦</span>
+      <strong>Single-Scenario Telematics Generator (Legacy Mode)</strong>
+    </span>
+    <span class="summary-badge">CLICK TO EXPAND</span>
+  </summary>
+
+  <div class="legacy-body">
+    <p class="legacy-intro">Generate single scenario trip batches (Safe Urban, Normal Mixed, Aggressive Highway, Custom Risk).</p>
+    <form id="generation-form">
+      <div class="form-grid">
+        <label class="field field-scenario">
+          <span class="field-label">Driving scenario</span>
+          <span class="select-wrap">
+            <select id="scenario" name="scenario">
+              {% for scenario in scenarios %}
+                <option value="{{ scenario }}" {% if scenario == "Normal Mixed" %}selected{% endif %}>{{ scenario }}</option>
+              {% endfor %}
+            </select>
+            <span class="select-chevron">⌄</span>
+          </span>
+        </label>
+        <label class="field">
+          <span class="field-label">Number of trips</span>
+          <span class="input-wrap">
+            <input id="records" name="records" type="number" min="1" max="10000" value="500" required>
+            <span class="input-suffix">trips</span>
+          </span>
+        </label>
+        <label class="field">
+          <span class="field-label">Random seed</span>
+          <span class="input-wrap">
+            <input id="seed" name="seed" type="number" min="0" max="4294967295" value="42" required>
+            <span class="seed-icon">⌘</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="custom-settings" id="custom-settings" hidden>
+        <div class="custom-heading"><span>Custom Risk parameters</span><small>All values validated before generation</small></div>
+        <div class="custom-grid">
+          <label class="field"><span class="field-label">Minimum average speed</span><span class="input-wrap"><input id="speed-min" type="number" min="10" max="150" value="25"><span class="input-suffix">km/h</span></span></label>
+          <label class="field"><span class="field-label">Maximum average speed</span><span class="input-wrap"><input id="speed-max" type="number" min="10" max="180" value="90"><span class="input-suffix">km/h</span></span></label>
+          <label class="field"><span class="field-label">Risk intensity</span><span class="input-wrap"><input id="risk-intensity" type="number" min="0" max="1" step="0.05" value="0.6"><span class="input-suffix">0–1</span></span></label>
+          <label class="field"><span class="field-label">Typical night driving</span><span class="input-wrap"><input id="night-ratio" type="number" min="0" max="1" step="0.05" value="0.2"><span class="input-suffix">0–1</span></span></label>
+        </div>
+      </div>
+
+      <div class="form-bottom">
+        <button class="generate-button" type="submit">
+          <span class="button-label">Generate Single Dataset</span>
+          <span class="button-arrow">→</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+      </div>
+    </form>
+    <div id="error-message" class="error-message" role="alert" hidden></div>
+  </div>
+</details>
+
+<!-- Disclaimer Banner -->
+<div class="disclaimer">
+  <span>ⓘ</span>
+  <p><strong>Demonstration & Research Notice:</strong> All vehicle records, telemetry metrics, risk scores, and insurance assessments are 100% synthetically generated heuristics for software evaluation and actuarial modeling. They do not represent real-world driving observations, formal insurance underwriting decisions, or actual financial pricing commitments.</p>
+</div>
